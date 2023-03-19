@@ -163,12 +163,14 @@ export default class RerunService implements Services.ServiceInstance {
     }
 
     async onComplete() {
+        console.error(`inside onComplete: value of this.disabled @ ${this.disabled}`);
         if (this.disabled) {
             return
         }
         try {
             const files = await readdir(this.rerunDataDir)
             const rerunFiles = files.filter((file) => file.endsWith('.json'))
+            console.error(`rerunFiles found to be @ ${JSON.stringify(rerunFiles)}`);
             if (rerunFiles.length === 0) {
                 return
             }
@@ -189,13 +191,14 @@ export default class RerunService implements Services.ServiceInstance {
                     failureLocations.add(failure.location.replace(/\\/g, '/'))
                 })
             }
+            console.error(`failureLocations found to be @ ${JSON.stringify(failureLocations)}`);
             failureLocations.forEach((failureLocation) => {
                 rerunCommand += ` --spec=${failureLocation}`
             })
             await writeFile(this.rerunScriptPath, rerunCommand, { mode: 0o755 })
-            console.log(`Re-run script has been generated @ ${this.rerunScriptPath}`);
+            console.error(`Re-run script has been generated @ ${this.rerunScriptPath}`);
         } catch (err) {
-            console.log(`Re-run service failed to generate re-run script: ${err}`);
+            console.error(`Re-run service failed to generate re-run script: ${err}`);
         }
     }
 }
