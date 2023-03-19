@@ -193,9 +193,9 @@ export default class RerunService implements Services.ServiceInstance {
                 rerunCommand += ` --spec=${failureLocation}`
             })
             await writeFile(this.rerunScriptPath, rerunCommand, { mode: 0o755 })
-            // console.log(`Re-run script has been generated @ ${this.rerunScriptPath}`);
+            console.log(`Re-run script has been generated @ ${this.rerunScriptPath}`);
         } catch (err) {
-            // console.log(`Re-run service failed to generate re-run script: ${err}`);
+            console.log(`Re-run service failed to generate re-run script: ${err}`);
         }
     }
 }
