@@ -1,10 +1,10 @@
 WebdriverIO Re-run Service
 ==========================
 
-[![wdio-rerun-svc CI](https://github.com/webdriverio-community/wdio-rerun-svc/actions/workflows/test.yml/badge.svg)](https://github.com/webdriverio-community/wdio-rerun-svc/actions/workflows/test.yml)
+[![wdio-rerun-svc CI](https://github.com/rckahale/wdio-rerun-svc/actions/workflows/test.yml/badge.svg)](https://github.com/rckahale/wdio-rerun-svc/actions/workflows/test.yml)
 ![npm](https://img.shields.io/npm/dm/wdio-rerun-svc)
 ![npm bundle size](https://img.shields.io/bundlephobia/min/wdio-rerun-svc)
-![GitHub issues](https://img.shields.io/github/issues/webdriverio-community/wdio-rerun-svc)
+![GitHub issues](https://img.shields.io/github/issues/rckahale/wdio-rerun-svc)
 
 This service tracks failing Mocha or Jasmine tests and Cucumber scenarios executed within the [WebdriverIO](https://webdriver.io) test framework. It will allow failing or unstable tests or scenarios to be re-run.
 
