@@ -1,10 +1,10 @@
 WebdriverIO Re-run Service
 ==========================
 
-[![wdio-rerun-service CI](https://github.com/webdriverio-community/wdio-rerun-service/actions/workflows/test.yml/badge.svg)](https://github.com/webdriverio-community/wdio-rerun-service/actions/workflows/test.yml)
-![npm](https://img.shields.io/npm/dm/wdio-rerun-service)
-![npm bundle size](https://img.shields.io/bundlephobia/min/wdio-rerun-service)
-![GitHub issues](https://img.shields.io/github/issues/webdriverio-community/wdio-rerun-service)
+[![wdio-rerun-svc CI](https://github.com/webdriverio-community/wdio-rerun-svc/actions/workflows/test.yml/badge.svg)](https://github.com/webdriverio-community/wdio-rerun-svc/actions/workflows/test.yml)
+![npm](https://img.shields.io/npm/dm/wdio-rerun-svc)
+![npm bundle size](https://img.shields.io/bundlephobia/min/wdio-rerun-svc)
+![GitHub issues](https://img.shields.io/github/issues/webdriverio-community/wdio-rerun-svc)
 
 This service tracks failing Mocha or Jasmine tests and Cucumber scenarios executed within the [WebdriverIO](https://webdriver.io) test framework. It will allow failing or unstable tests or scenarios to be re-run.
 
@@ -30,20 +30,20 @@ It is recommended to take some time to evaluate the options available. A hybrid 
 Using `npm`:
 
 ```bash
-npm install wdio-rerun-service
+npm install wdio-rerun-svc
 ```
 
 or using `yarn`:
 
 ```bash
-yarn add wdio-rerun-service
+yarn add wdio-rerun-svc
 ```
 
 After package installation is complete, add it to `services` array in `wdio.conf.js`:
 
 ```js
 // wdio.conf.js
-import RerunService from 'wdio-rerun-service';
+import RerunService from 'wdio-rerun-svc';
 export const config = {
     // ...
     services: [RerunService, {
@@ -102,7 +102,7 @@ The following options may be added to the wdio.conf.js file. To define options f
 
 ```js
 // wdio.conf.js
-import RerunService from 'wdio-rerun-service';
+import RerunService from 'wdio-rerun-svc';
 export const config = {
     // ...
     services: [
@@ -123,7 +123,7 @@ Default: `./results/rerun`
 
 Example:
 ```js
-import RerunService from 'wdio-rerun-service';
+import RerunService from 'wdio-rerun-svc';
 export const config = {
     // ...
     services: [
@@ -144,7 +144,7 @@ Default: `./rerun.sh`
 
 Example:
 ```js
-import RerunService from 'wdio-rerun-service';
+import RerunService from 'wdio-rerun-svc';
 export const config = {
     // ...
     services: [
@@ -165,7 +165,7 @@ Default: `[]`
 
 Example:
 ```js
-import RerunService from 'wdio-rerun-service';
+import RerunService from 'wdio-rerun-svc';
 export const config = {
     // ...
     services: [
@@ -186,7 +186,7 @@ Default: `''`
 
 Example:
 ```js
-import RerunService from 'wdio-rerun-service';
+import RerunService from 'wdio-rerun-svc';
 export const config = {
     // ...
     services: [
@@ -208,7 +208,7 @@ Default: `''`
 
 Example:
 ```js
-import RerunService from 'wdio-rerun-service';
+import RerunService from 'wdio-rerun-svc';
 export const config = {
     // ...
     services: [

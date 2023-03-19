@@ -9,7 +9,7 @@ import { argv, platform } from 'node:process'
 import RerunService from '../src/index.js'
 import { gherkinDocument, pickle } from './fixtures/cucumber.js'
 
-describe('wdio-rerun-service', () => {
+describe('wdio-rerun-svc', () => {
     const nonPassingItemsCucumber = [
         { location: 'feature/sample.feature:1', failure: 'some error' },
         { location: 'feature/sample.feature:4', failure: 'another error' },
